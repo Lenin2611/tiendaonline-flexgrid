@@ -55,7 +55,7 @@ main {
     grid-area:contact;
 }
 
-.nav,.nav-links,.home,.about,.menu,.services,.quality,.contact,.menu-imgs,.services-imgs,.contact-col {
+.nav,.nav-links-list,.home,.about,.menu,.services,.quality,.contact,.menu-imgs,.services-imgs,.contact-col {
     display: flex;
     justify-content: space-between;
 }
@@ -141,6 +141,10 @@ main {
     margin-left: 4vw;
 }
 
+.nav-links-list {
+    list-style: none;
+}
+
 .contact-social-link {
     padding: 0.5vw 0.8vw;
     border-radius: 100%;
@@ -200,60 +204,72 @@ main {
 @media screen and (max-width: 767.9px) {
     .nav,.nav-links,.home,.menu-imgs,.services-imgs,.contact {
         flex-direction: column;
-        margin: 0vw;
-    }
-
-    .home,.about,.menu,.services,.quality-bg,.contact {
-        margin-bottom: 5vw !important;
-    }
-
-    .contact {
-        margin-inline: 6vw;
-    }
-
-    .contact-col,.contact-social-link {
-        margin-bottom: 5vw;
-    }
-
-    .contact-title {
-        margin-bottom: 3vw;
     }
 
     .about {
         flex-direction: column-reverse;
     }
 
-    .nav {
-        position: static;
-    }
-
-    .nav-links {
-        background-color: #2c2b47;
+    .nav-links-list {
+        flex-direction: column;
     }
 
     .nav,.home-text,.about-text,.contact-col-social {
         text-align: center;
     }
 
-    .nav-link {
-        margin: 0vw;
-        padding-inline: 100vw;
+    .nav-links {
+        background-color: #2c2b47;
     }
 
-    .contact-title,.contact-link,.contact-social-link {
-        font-size: 4.3vw;
+    .quality-bg {
+        padding-block: 5vw;
+    }
+
+    .nav-link {
+        padding-inline: 41.7vw;
+        width: 100vw;
+    }
+
+    .nav,.nav-link {
+        margin: 0vw;
+    }
+
+    .home-img,.about-img,.menu-img,.services-img {
+        margin-top: 4vw;
+        margin-inline: auto;
+    }
+
+    .contact-title {
+        margin-bottom: 3vw;
+    }
+
+    .home,.about,.menu,.services,.quality-bg,.contact,.contact-col,.contact-social-link {
+        margin-bottom: 5vw;
+    }
+
+    .contact {
+        margin-inline: 6vw;
+    }
+
+    .menu-bg,.services-bg {
+        margin-block: 2vw;
     }
 
     .home-link,.about-link,.menu-img-text1,.menu-img-text2,.services-img-text1,.quality-link {
         font-size: 3.5vw;
     }
 
-    .nav-title,.about-text1,.menu-text1,.menu-img-title,.services-text1,.services-img-title,.quality-text {
-        font-size: 6vw !important;
-    }
-
     .nav-link,.home-text1,.about-title,.about-text2,.menu-title,.services-title,.nav-title {
         font-size: 4vw;
+    }
+
+    .contact-title,.contact-link,.contact-social-link {
+        font-size: 4.3vw;
+    }
+
+    .nav-title,.about-text1,.menu-text1,.menu-img-title,.services-text1,.services-img-title,.quality-text {
+        font-size: 6vw;
     }
 
     .home-title {
@@ -263,25 +279,14 @@ main {
     .home-img,.about-img {
         width: 45vw;
         height: 45vw;
-        margin-top: 3vw;
-        margin-inline: auto;
     }
 
     .menu-img,.services-img {
         width: 40vw;
         height: 40vw;
-        margin-inline: auto;
-    }
-    
-    .menu-bg,.services-bg {
-        margin-block: 2vw;
     }
 
         .menu-bg:focus {
             background-color: #ffa984;
         }
-
-    .quality-bg {
-        padding: 5vw 0vw;
-    }
 }
