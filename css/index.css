@@ -68,7 +68,7 @@ main {
     text-align: center;
 }
 
-.home,.about,.menu,.services,.contact {
+.home,.about,.menu,.services {
     align-items: center;
 }
 
@@ -238,7 +238,7 @@ main {
     }
 
     .nav-link {
-        padding-inline: 41.7vw;
+        padding: 2vw 41.7vw;
         width: 100vw;
     }
 
