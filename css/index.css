@@ -223,16 +223,13 @@ main {
 
     .nav-links-list {
         flex-direction: column;
+        background-color: #2c2b47;
     }
 
     .nav,.home-text,.about-text,.contact-col-social {
         text-align: center;
     }
-
-    .nav-links {
-        background-color: #2c2b47;
-    }
-
+    
     .quality-bg {
         padding-block: 5vw;
     }
