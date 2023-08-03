@@ -68,6 +68,10 @@ main {
     text-align: center;
 }
 
+.home,.about,.menu,.services,.contact {
+    align-items: center;
+}
+
 .nav-link,.home-link,.about-link,.menu-bg,.quality-link,.contact-link,.contact-social-link {
     text-decoration: none;
 }
@@ -187,9 +191,9 @@ main {
         transition: transform 0.3s ease-in-out;
     }
 
-    .quality-bg {
-        padding-block: 4vw;
-    }
+.quality-bg {
+    padding-block: 4vw;
+}
 
 .menu-img,.services-img {
     width: 15vw;
