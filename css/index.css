@@ -19,7 +19,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 100% 100% 100% 100% 100% 100% 100%;
+    grid-template-rows: 3vw 35vw 35vw 35vw 35vw 25vw 15vw;
     grid-template-areas: "nav" "home" "about" "menu" "services" "quality" "contact";
 }
 
@@ -229,7 +229,7 @@ main {
     .nav,.home-text,.about-text,.contact-col-social {
         text-align: center;
     }
-    
+
     .quality-bg {
         padding-block: 5vw;
     }
