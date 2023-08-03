@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1d2b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100% 100% 100% 100% 100% 100%;
+    grid-template-areas: "nav" "home" "about" "menu" "services" "quality" "contact";
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #1e1d2b;
+    margin-inline: 2.5vw;
+    margin-block: auto;
+    align-items: center;
+}
+
+.home {
+    grid-area: home;
+}
+
+.about {
+    grid-area: about;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.services {
+    grid-area: services;
+}
+
+.quality {
+    grid-area: quality;
+}
+
+.contact {
+    grid-area:contact;
+}
+
+.nav,.nav-links,.home,.about,.menu,.services,.quality,.contact,.menu-imgs,.services-imgs,.contact-col {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu,.services,.quality,.contact-col {
+    flex-direction: column;
+}
+
+.menu,.services,.quality {
+    text-align: center;
+}
+
+.nav-link,.home-link,.about-link,.menu-bg,.quality-link,.contact-link,.contact-social-link {
+    text-decoration: none;
+}
+
+.nav-link,.home-text1,.home-link,.about-text1,.about-text2,.about-link,.menu-text1,.services-text1,.services-img-text1,.quality-link,.contact-title,.contact-link,.contact-social-link {
+    color: #fff;
+}
+
+    .nav-link:hover,.nav-link:focus,.contact-link:hover,.contact-link:focus {
+        color: #ff702a;
+    }
+
+.menu-img-title,.menu-img-text1 {
+    color: #1e1d2b;
+}
+
+.nav-title,.home-title,.about-title,.menu-title,.services-title,.menu-img-text2,.services-img-title {
+    color: #ff702a;
+}
+
+.menu-bg,.quality-bg {
+    background-color: #ffefe8;
+}
+
+.home-link,.about-link,.quality-link,.contact-social-link {
+    background-color: #ff702a;
+}
+
+.contact-title,.contact-link,.contact-social-link {
+    font-size: 1.3vw;
+}
+
+.home-link,.about-link,.menu-img-text1,.menu-img-text2,.services-img-text1,.quality-link {
+    font-size: 1.5vw;
+}
+
+.about-title,.about-text2,.menu-title,.menu-img-title,.services-title,.services-img-title,.nav-link {
+    font-size: 2vw;
+}
+
+.home-text1,.about-text1,.menu-text1,.services-text1,.quality-text,.nav-title {
+    font-size: 3vw;
+}
+
+.home-title {
+    font-size: 7vw;
+}
+
+.home,.about,.menu,.services,.quality,.contact {
+    margin: 0vw 5vw 3vw;
+}
+
+.contact-social {
+    margin-top: 2vw;
+}
+
+.home-title,.about-title,.about-text1,.menu-title,.menu-img-title,.menu-img-text1,.menu-img-text2,.services-title,.services-img-title,.services-img-text1 {
+    margin-bottom: 0vw;
+}
+
+.contact-title {
+    margin-bottom: 1vw;
+    border-bottom: #ff6416 solid 2px;
+}
+
+.home-text1,.about-text2,.menu-text1,.services-text1,.quality-text {
+    margin-bottom: 2vw;
+}
+
+.nav-link {
+    margin-left: 4vw;
+}
+
+.contact-social-link {
+    padding: 0.5vw 0.8vw;
+    border-radius: 100%;
+}
+
+    .contact-social-link:focus {
+        padding: calc(0.5vw - 2px) calc(0.8vw - 2px);
+        border: #ffa984 solid 2px;
+    }
+
+    .home-link,.about-link,.quality-link {
+        padding: 0.5vw 1.5vw;
+    }
+    
+        .home-link:hover,.about-link:hover,.quality-link:hover,.contact-social-link:hover {
+            background-color: #ff6416;
+        }
+    
+        .home-link:focus,.about-link:focus,.quality-link:focus {
+            border: #ffefe8 solid 2px;
+            padding: calc(0.5vw - 2px) calc(1.5vw - 2px);
+        }
+    
+        .quality-link:focus {
+            border: #ffa984 solid 2px;
+        }
+
+.menu-bg,.services-bg {
+    padding: 2vw 4.3vw 1vw;
+    margin-inline: 1vw;
+}
+
+    .menu-bg:hover {
+        padding: calc(2vw - 2px) calc(4.3vw - 2px) calc(1vw - 2px);
+        border: #ff702a solid 2px;
+    }
+
+    .menu-bg:hover .menu-img {
+        transform: translateY(-1vw);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .quality-bg {
+        padding-block: 4vw;
+    }
+
+.menu-img,.services-img {
+    width: 20vw;
+    height: 20vw;
+}
+
+.home-img,.about-img {
+    width: 35vw;
+    height: 35vw;
+}
+
+@media screen and (max-width: 767.9px) {
+    .nav,.nav-links,.home,.menu-imgs,.services-imgs,.contact {
+        flex-direction: column;
+        margin: 0vw;
+    }
+
+    .home,.about,.menu,.services,.quality-bg,.contact {
+        margin-bottom: 5vw !important;
+    }
+
+    .contact {
+        margin-inline: 6vw;
+    }
+
+    .contact-col,.contact-social-link {
+        margin-bottom: 5vw;
+    }
+
+    .contact-title {
+        margin-bottom: 3vw;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .nav {
+        position: static;
+    }
+
+    .nav-links {
+        background-color: #2c2b47;
+    }
+
+    .nav,.home-text,.about-text,.contact-col-social {
+        text-align: center;
+    }
+
+    .nav-link {
+        margin: 0vw;
+        padding-inline: 100vw;
+    }
+
+    .contact-title,.contact-link,.contact-social-link {
+        font-size: 4.3vw;
+    }
+
+    .home-link,.about-link,.menu-img-text1,.menu-img-text2,.services-img-text1,.quality-link {
+        font-size: 3.5vw;
+    }
+
+    .nav-title,.about-text1,.menu-text1,.menu-img-title,.services-text1,.services-img-title,.quality-text {
+        font-size: 6vw !important;
+    }
+
+    .nav-link,.home-text1,.about-title,.about-text2,.menu-title,.services-title,.nav-title {
+        font-size: 4vw;
+    }
+
+    .home-title {
+        font-size: 10vw;
+    }
+
+    .home-img,.about-img {
+        width: 45vw;
+        height: 45vw;
+        margin-top: 3vw;
+        margin-inline: auto;
+    }
+
+    .menu-img,.services-img {
+        width: 40vw;
+        height: 40vw;
+        margin-inline: auto;
+    }
+    
+    .menu-bg,.services-bg {
+        margin-block: 2vw;
+    }
+
+        .menu-bg:focus {
+            background-color: #ffa984;
+        }
+
+    .quality-bg {
+        padding: 5vw 0vw;
+    }
+}
