@@ -97,27 +97,27 @@ main {
 }
 
 .contact-title,.contact-link,.contact-social-link {
-    font-size: 1.3vw;
+    font-size: 1vw;
 }
 
 .home-link,.about-link,.menu-img-text1,.menu-img-text2,.services-img-text1,.quality-link {
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 .about-title,.about-text2,.menu-title,.menu-img-title,.services-title,.services-img-title,.nav-link {
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .home-text1,.about-text1,.menu-text1,.services-text1,.quality-text,.nav-title {
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 
 .home-title {
-    font-size: 7vw;
+    font-size: 5vw;
 }
 
 .home,.about,.menu,.services,.quality,.contact {
-    margin: 0vw 5vw 3vw;
+    margin: 3vw 10vw 3vw;
 }
 
 .contact-social {
@@ -192,13 +192,13 @@ main {
     }
 
 .menu-img,.services-img {
-    width: 20vw;
-    height: 20vw;
+    width: 15vw;
+    height: 15vw;
 }
 
 .home-img,.about-img {
-    width: 35vw;
-    height: 35vw;
+    width: 30vw;
+    height: 30vw;
 }
 
 @media screen and (max-width: 767.9px) {
