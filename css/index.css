@@ -19,7 +19,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 3vw 35vw 35vw 35vw 35vw 25vw 15vw;
+    grid-template-rows: 3vw repeat(4, 35vw) 25vw 15vw;
     grid-template-areas: "nav" "home" "about" "menu" "services" "quality" "contact";
 }
 
